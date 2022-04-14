@@ -5,5 +5,8 @@ public class ContaCorrente {
     private int numero;
     private double saldo;
 
+    public void sacar(){}
+    public void depositar(){}
+    public void tranferir(){}
 
 }
