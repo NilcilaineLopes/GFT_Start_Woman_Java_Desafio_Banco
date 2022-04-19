@@ -10,6 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Cliente {
-    public String nome;
+    private String nome;
+    private String cpf;
 
 }
