@@ -1,5 +1,8 @@
 package com.dio.banco.Desafio.Dio.Banco;
 
+import com.dio.banco.Desafio.Dio.Banco.model.Conta;
+import com.dio.banco.Desafio.Dio.Banco.model.ContaCorrente;
+import com.dio.banco.Desafio.Dio.Banco.model.ContaPoupanca;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +10,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DesafioDioBancoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DesafioDioBancoApplication.class, args);
+		Conta cc = new ContaCorrente();
+		cc.depositar(100);
+
+		Conta poupanca = new ContaPoupanca();
+		cc.tranferir(100,poupanca);
+
+
+		cc.imprimirExtrato();
+		poupanca.imprimirExtrato();
 	}
+
 
 }
