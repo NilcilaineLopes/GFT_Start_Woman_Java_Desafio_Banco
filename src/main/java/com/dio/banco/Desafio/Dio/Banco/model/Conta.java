@@ -37,7 +37,7 @@ public abstract class Conta implements IConta {
     protected void imprimirInfosComuns() {
         System.out.println(String.format("Agencia: %d", this.agencia));
         System.out.println(String.format("Número: %d", this.numero));
-        System.out.println(String.format("Saldo: %2.f", this.saldo));
+        System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 
     public int getAgencia() {
