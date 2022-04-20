@@ -11,6 +11,13 @@ public class ContaCorrente extends Conta {
         System.out.println("=== Extrato Conta Corrente ===");
         super.imprimirInfosComuns();
 
+    }
+
+    @Override
+    public void pagarBoleto(Boleto boleto) {
+        System.out.println("=== Boleto Bancario Conta Corrente===");
+        super.pagarBoleto(boleto);
 
     }
+
 }
